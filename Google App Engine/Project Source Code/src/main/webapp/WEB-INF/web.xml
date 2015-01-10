@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    	<servlet>
+		<servlet-name>UploadDownload</servlet-name>
+		<servlet-class>UploadDownloadServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UploadDownload</servlet-name>
+		<url-pattern>/gcs/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Delete</servlet-name>
+		<servlet-class>DeleteServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Cache</servlet-name>
+		<servlet-class>CacheServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Cache</servlet-name>
+		<url-pattern>/cache</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>CacheDelete</servlet-name>
+		<servlet-class>CacheDeleteServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CacheDelete</servlet-name>
+		<url-pattern>/cachedelete</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UploadLarge</servlet-name>
+		<servlet-class>UploadLargeServlet</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>UploadLarge</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>
